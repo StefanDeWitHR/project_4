@@ -9,6 +9,7 @@ namespace BaseLogic
     public interface Iterator<T>
     {
         Option<T> GetNext();
+       // Option<T> GetCurrent();
         void Reset();
     }
     public class IterableArray<T> : Iterator<T>
