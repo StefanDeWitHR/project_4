@@ -11,14 +11,14 @@ namespace BaseLogic
         Option<T> GetNext();
         void Reset();
     }
-    public class IterableList<T> : Iterator<T>
+    public class IterableArray<T> : Iterator<T>
     {
         private int size;
         private T[] array;
         private int current;
         private int amount_of_items;
 
-        public IterableList()
+        public IterableArray()
         {
             size = 10;
             amount_of_items = 0;
@@ -81,25 +81,6 @@ namespace BaseLogic
             public void Reset()
             {
                 visited = false;
-            }
-        }
-    public class IterableArray<T> : Iterator<T>
-        {
-            T[] array;
-            public IterableArray(T[] array)
-            {
-                this.array = array;
-            }
-            int index = -1;
-            public void Reset()
-            {
-                index = -1;
-            }
-            public Option<T> GetNext()
-            {
-                index = index + 1;
-                if (index >= array.Length) return new None<T>();
-                return new Some<T>(array[index]);
             }
         }
         
