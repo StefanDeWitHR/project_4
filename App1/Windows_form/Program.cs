@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using App1;
-namespace WindowsFormsApp1
+
+namespace Windows_form
 {
     static class Program
     {
