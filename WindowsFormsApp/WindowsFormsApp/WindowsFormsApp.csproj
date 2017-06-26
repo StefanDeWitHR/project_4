@@ -81,5 +81,11 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Android_app\Android_app.Android\Android_app.Android.csproj">
+      <Project>{e42f0107-37e5-40f2-a3dc-5857b5d4d2a5}</Project>
+      <Name>Android_app.Android</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
